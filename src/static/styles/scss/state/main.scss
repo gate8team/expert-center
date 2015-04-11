@@ -10,6 +10,10 @@
   display: inline-block;
 }
 
+.is-block {
+  display: block;
+}
+
 .is-row {
   overflow: hidden;
 }
@@ -22,6 +26,31 @@
   float: right;
 }
 
-.is-header-container {
+.is-col-1-of-3 {
+  width: 33%;
+}
+
+.is-main-ses-doc {
+  margin-top: -35px;
+}
+
+.is-header-container, .is-footer-container {
   padding: 0 50px;
+}
+
+.is-text-centered {
+  text-align: center;
+}
+
+.is-no-padding {
+  padding: 0;
+}
+
+.is-no-margin {
+  margin: 0;
+}
+
+.is-no-offset {
+  @extend .is-no-margin;
+  @extend .is-no-padding;
 }
