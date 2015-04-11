@@ -160,6 +160,41 @@
 
     }
   }
+  
+  &-instructions {
+    
+  }
+  
+  &-tips {
+    &-list {
+      margin: 90px 0 0 0;
+      padding: 0 25px;
+      
+      &-item {
+        margin: 90px 0 0 0;
+        font-family: $ubuntu-font;
+        
+        &:first-child {
+          margin-top: 0;
+        }
+        
+        &-title {
+          color: $gray-color;
+          font-size: 18px;
+        }
+        
+        &-description {
+          margin: 15px 0 0 0;
+          padding: 15px 20px;
+          background: $yellow-color;
+          font-size: 24px;
+          font-weight: 300;
+          font-style: italic;
+          min-height: 142px;
+        }
+      }
+    }
+  }
 }
 
 .button {
@@ -171,6 +206,11 @@
   
   &-large {
     padding: 10px 60px;
+  }
+  
+  &-small {
+    padding: 10px 0;
+    min-width: 350px;
   }
   
   &-orange {

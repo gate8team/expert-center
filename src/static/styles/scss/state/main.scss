@@ -26,14 +26,6 @@
   float: right;
 }
 
-.is-col-1-of-2 {
-  width: 50%;
-}
-
-.is-col-1-of-3 {
-  width: 33%;
-}
-
 .is-main-ses-doc {
   margin-top: -35px;
 }
@@ -59,8 +51,40 @@
   @extend .is-no-padding;
 }
 
-.is-hand-form {
-  color: $white-color;
-  background: url("../../img/form-hand-bg.jpg") no-repeat;
-  background-position: center 0%;
+.is {
+  &-form {
+    background-position: center 0%;
+    
+    &-hand {
+      color: $white-color;
+      background: url("../../img/form-hand-bg.jpg") no-repeat;
+    }
+    
+    &-what-next {
+      color: $white-color;
+      background: url("../../img/form-what-next-bg.jpg") no-repeat;
+    }
+  }
+
+  &-col {
+    &-1 {
+      &-of-2 {
+        width: 50%;
+      }
+      
+      &-of-3 {
+        width: 33%;
+      }
+      
+      &-of-5 {
+        width: 20%;
+      }
+    }
+    
+    &-4 {
+      &-of-5 {
+        width: 80%;
+      }
+    }
+  }
 }
