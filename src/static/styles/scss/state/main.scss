@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+.is-mobile-fontable {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 .is-inline-block {
   display: inline-block;
 }
@@ -56,6 +63,7 @@
     background-repeat: no-repeat;
 //    background-attachment: fixed;
     background-position: center;
+    min-width: 960px;
     
     &-hand {
       color: $white-color;

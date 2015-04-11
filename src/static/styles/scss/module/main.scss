@@ -5,6 +5,7 @@
   color: $header-text-color;
   font-family: $roboto-font;
   font-weight: 300;
+  min-width: 960px;
   
   &-logo {
     padding: 20px 0 13px 10px;
@@ -24,6 +25,7 @@
   color: $footer-text-color;
   font-family: $roboto-font;
   font-weight: 300;
+  min-width: 960px;
 
   &-logo {
     padding: 20px 0 13px 10px;
@@ -48,6 +50,7 @@
     padding: 50px 0;
     background: url("../../img/main-bg.jpg") no-repeat;
     background-position: center 0%;
+    min-width: 960px;
     
     &-title {
       font-family: $ubuntu-font;

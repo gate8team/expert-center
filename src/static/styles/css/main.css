@@ -460,7 +460,8 @@ td, th {
   padding: 8px 0;
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  min-width: 960px; }
   .header-logo {
     padding: 20px 0 13px 10px;
     font-size: 20px; }
@@ -474,7 +475,8 @@ td, th {
   padding: 8px 0;
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  min-width: 960px; }
   .footer-logo {
     padding: 20px 0 13px 10px;
     font-size: 20px; }
@@ -491,7 +493,8 @@ td, th {
   .main-offer {
     padding: 50px 0;
     background: url("../../img/main-bg.jpg") no-repeat;
-    background-position: center 0%; }
+    background-position: center 0%;
+    min-width: 960px; }
     .main-offer-title {
       font-family: 'Ubuntu', sans-serif;
       font-size: 46px;
@@ -725,6 +728,12 @@ td, th {
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
+.is-mobile-fontable {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
 .is-inline-block {
   display: inline-block; }
 
@@ -757,7 +766,8 @@ td, th {
 
 .is-form {
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  min-width: 960px; }
   .is-form-hand {
     color: #fff;
     background-image: url("../../img/form-hand-bg.jpg"); }
