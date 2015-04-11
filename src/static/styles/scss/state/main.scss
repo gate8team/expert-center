@@ -76,14 +76,45 @@
         width: 33%;
       }
       
+      &-of-2 {
+        width: 50%;
+      }
+      
       &-of-5 {
         width: 20%;
+      }
+      
+      &-of-4 {
+        width: 25%;
       }
     }
     
     &-4 {
       &-of-5 {
         width: 80%;
+      }
+    }
+    
+    &-55-p {
+      width: 55%;
+    }
+  }
+  
+  &-list {
+    &-inline {
+      list-style: none;
+      
+      & > li {
+        display: inline-block;
+      }
+    }
+  }
+  
+  &-no {
+    &-paddings {
+      &-tb {
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
   }

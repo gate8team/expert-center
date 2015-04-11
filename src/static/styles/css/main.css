@@ -582,6 +582,55 @@ td, th {
         font-weight: 300;
         font-style: italic;
         min-height: 142px; }
+  .main-its-important-description {
+    margin: 35px 0 0 0;
+    text-indent: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 38px; }
+  .main-decision-description {
+    margin: 45px 0 0 0;
+    font-family: 'Ubuntu', sans-serif; }
+    .main-decision-description-tabs {
+      font-size: 22px;
+      font-weight: 300;
+      margin: 0 0 60px 0; }
+      .main-decision-description-tabs-item {
+        margin: 0 0 0 50px;
+        padding: 5px 20px;
+        color: #a0a0a0;
+        cursor: pointer; }
+        .main-decision-description-tabs-item:first-child {
+          margin-left: 0; }
+        .main-decision-description-tabs-item:hover, .main-decision-description-tabs-item.active {
+          color: #000;
+          border-bottom: 3px solid #ff9c00; }
+
+.order-item-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px; }
+.order-item-description {
+  margin: 30px 0 0 0; }
+  .order-item-description-content {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px 30px;
+    font-weight: 300;
+    font-size: 22px; }
+  .order-item-description-price {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px 0;
+    font-weight: 300; }
+    .order-item-description-price-old {
+      color: #6c6c6c;
+      font-size: 22px; }
+    .order-item-description-price-new {
+      margin: 12px 0 0 0;
+      font-size: 30px; }
+    .order-item-description-price-button {
+      margin: 12px 0 0 0; }
+.order-item + .order-item {
+  margin: 80px 0 0 0; }
 
 .button {
   display: inline-block;
@@ -594,6 +643,8 @@ td, th {
   .button-small {
     padding: 10px 0;
     min-width: 350px; }
+  .button-full-widh {
+    width: 100%; }
   .button-orange {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 28px;
@@ -703,7 +754,20 @@ td, th {
   width: 50%; }
 .is-col-1-of-3 {
   width: 33%; }
+.is-col-1-of-2 {
+  width: 50%; }
 .is-col-1-of-5 {
   width: 20%; }
+.is-col-1-of-4 {
+  width: 25%; }
 .is-col-4-of-5 {
   width: 80%; }
+.is-col-55-p {
+  width: 55%; }
+.is-list-inline {
+  list-style: none; }
+  .is-list-inline > li {
+    display: inline-block; }
+.is-no-paddings-tb {
+  padding-top: 0;
+  padding-bottom: 0; }

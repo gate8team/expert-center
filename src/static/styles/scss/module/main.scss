@@ -195,6 +195,98 @@
       }
     }
   }
+  
+  &-its-important {
+    &-description {
+      margin: 35px 0 0 0;
+      text-indent: 35px;
+      font-family: $ubuntu-font;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 38px;
+    }
+  }
+  
+  &-decision {
+    &-description {
+      margin: 45px 0 0 0;
+      font-family: $ubuntu-font;
+      
+      &-tabs {
+        font-size: 22px;
+        font-weight: 300;
+        margin: 0 0 60px 0;
+        
+        &-item {
+          margin: 0 0 0 50px;
+          padding: 5px 20px;
+          color: $inactive-color;
+          cursor: pointer;
+          
+          &:first-child {
+            margin-left: 0;
+          }
+          
+          &:hover, &.active {
+            color: $black-color;
+            border-bottom: 3px solid $orange-border-color;
+          }
+        }
+      }
+      
+      &-content {
+        
+      }
+    }
+  }
+  
+  &-conclusion {
+    
+  }
+}
+
+.order {
+  &-item {
+    &-title {
+      font-family: $ubuntu-font;
+      font-size: 30px;
+    }
+
+    &-description {
+      margin: 30px 0 0 0;
+      
+      &-content {
+        font-family: $ubuntu-font;
+        padding: 15px 30px;
+        font-weight: 300;
+        font-size: 22px;
+      }
+      
+      &-price {
+        font-family: $ubuntu-font;
+        padding: 15px 0;
+        font-weight: 300;
+        
+        &-old {
+          color: $dark-gray-color;
+          font-size: 22px;
+        }
+        
+        &-new {
+          margin: 12px 0 0 0;
+          font-size: 30px;
+        }
+        
+        &-button {
+          margin: 12px 0 0 0;
+        }
+      }
+    }
+  }
+
+  &-item + &-item {
+    margin: 80px 0 0 0;
+  }
 }
 
 .button {
@@ -211,6 +303,10 @@
   &-small {
     padding: 10px 0;
     min-width: 350px;
+  }
+  
+  &-full-widh {
+    width: 100%;
   }
   
   &-orange {
