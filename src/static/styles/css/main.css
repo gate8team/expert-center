@@ -341,12 +341,12 @@ td, th {
   width: 149px;
   height: 187px; }
 
-.icon-cross {
+.icon-cross, .main-privileges-list-item:before {
   background-position: -978px -638px;
   width: 66px;
   height: 66px; }
 
-.icon-cross, .icon-fifth-person {
+.icon-cross, .main-privileges-list-item:before, .icon-fifth-person {
   background-image: url("../../img/icons-sprite.png"); }
 
 .icon-fifth-person {
@@ -518,6 +518,38 @@ td, th {
       font-weight: 300; }
     .main-offer-order-button {
       margin: 30px 0 0 0; }
+  .main-item {
+    padding: 50px 0;
+    color: #000;
+    font-family: 'Ubuntu', sans-serif; }
+    .main-item-title {
+      font-size: 45px;
+      font-weight: 600; }
+    .main-item-sub-title {
+      font-size: 30px;
+      font-weight: 300; }
+  .main-privileges-list {
+    margin: 30px 0 0 0;
+    list-style: none;
+    padding: 0px; }
+    .main-privileges-list-item {
+      position: relative;
+      margin: 15px 0 15px 0;
+      padding: 0 15px 0 70px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 300;
+      font-size: 28px;
+      height: 55px;
+      line-height: 55px; }
+      .main-privileges-list-item-description {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle; }
+      .main-privileges-list-item:before {
+        position: absolute;
+        content: ' ';
+        top: 0;
+        left: 0; }
 
 .button {
   display: inline-block;
@@ -576,6 +608,9 @@ td, th {
 
 .is-right-col {
   float: right; }
+
+.is-col-1-of-2 {
+  width: 50%; }
 
 .is-col-1-of-3 {
   width: 33%; }
