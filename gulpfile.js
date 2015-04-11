@@ -36,6 +36,11 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('src/static/styles/css/'));
 });
 
+// watch
+gulp.task('watch', function() {
+  gulp.watch('src/static/styles/scss/**/*.scss', ['sass']);
+});
+
 // Let's lint our js
 gulp.task('js-lint', function() {
   gulp.src('app/assets/javascripts/**/*.js')

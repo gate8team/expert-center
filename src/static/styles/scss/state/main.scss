@@ -1,0 +1,27 @@
+.is-box-sized *, .is-box-sized *:before, .is-box-sized *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.is-inline-block {
+  display: inline-block;
+}
+
+.is-row {
+  overflow: hidden;
+}
+
+.is-left-col {
+  float: left;
+}
+
+.is-right-col {
+  float: right;
+}
+
+.is-header-container {
+  padding: 0 50px;
+}

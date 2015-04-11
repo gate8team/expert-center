@@ -1,0 +1,23 @@
+.header {
+  background: $header-bg-color;
+  border-bottom: 1px solid $header-border-color;
+  padding: 8px 0;
+  color: $header-text-color;
+  font-family: $roboto-font;
+  font-weight: 300;
+  
+  &-logo {
+    padding: 20px 0 13px 10px;
+    font-size: 20px;
+  }
+  
+  &-phones {
+    padding: 7px 0 4px 0;
+    font-size: 30px;
+  }
+}
+
+.main-container {
+  width: $container-width;
+  margin: 0 auto;
+}
