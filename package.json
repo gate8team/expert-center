@@ -1,0 +1,24 @@
+{
+  "name": "geekatoo",
+  "version": "1.0.0",
+  "description": "Expert Center App",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Sabanov",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-coffeelint": "^0.4.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.10.0",
+    "gulp-replace": "^0.5.3",
+    "gulp.spritesmith": "^3.5.3"
+  }
+}
