@@ -489,7 +489,7 @@ td, th {
 .main {
   color: #fff; }
   .main-offer {
-    padding: 40px 0;
+    padding: 50px 0;
     background: url("../../img/main-bg.jpg") no-repeat;
     background-position: center 0%; }
     .main-offer-title {
@@ -528,6 +528,19 @@ td, th {
     .main-item-sub-title {
       font-size: 30px;
       font-weight: 300; }
+  .main-form-item {
+    padding: 30px 0;
+    color: #000; }
+    .main-form-item-title {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 36px;
+      font-weight: 600; }
+    .main-form-item-sub-title {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 20px;
+      font-weight: 300; }
+    .main-form-item-form {
+      margin: 15px 0 0 0; }
   .main-privileges-list {
     margin: 30px 0 0 0;
     list-style: none;
@@ -587,6 +600,38 @@ td, th {
       background: -moz-linear-gradient(top, #f47a20, #faa51a);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a'); }
 
+.input {
+  color: #000;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 20px; }
+  .input-large {
+    height: 45px;
+    width: 290px; }
+  .input-user {
+    background: url("../../img/icons/user-input.png") #fff no-repeat 12px 12px;
+    padding-left: 35px; }
+  .input-phone {
+    background: url("../../img/icons/phone-input.png") #fff no-repeat 12px 12px;
+    padding-left: 45px; }
+
+.form-input {
+  padding: 0 12px 0 0; }
+  .form-input:last-child {
+    padding-right: 0; }
+  .form-input-text {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+
 .is-box-sized *, .is-box-sized *:before, .is-box-sized *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -630,3 +675,7 @@ td, th {
 .is-no-margin, .is-no-offset {
   margin: 0; }
 
+.is-hand-form {
+  color: #fff;
+  background: url("../../img/form-hand-bg.jpg") no-repeat;
+  background-position: center 0%; }

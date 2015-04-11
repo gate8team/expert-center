@@ -58,3 +58,9 @@
   @extend .is-no-margin;
   @extend .is-no-padding;
 }
+
+.is-hand-form {
+  color: $white-color;
+  background: url("../../img/form-hand-bg.jpg") no-repeat;
+  background-position: center 0%;
+}

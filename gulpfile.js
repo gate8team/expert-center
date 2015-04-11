@@ -32,7 +32,7 @@ gulp.task('sprite', function () {
 // sass
 gulp.task('sass', function () {
   gulp.src('src/static/styles/scss/main.scss')
-    .pipe(sass())
+    .pipe(sass({errLogToConsole: true}))
     .pipe(gulp.dest('src/static/styles/css/'));
 });
 
