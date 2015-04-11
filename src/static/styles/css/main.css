@@ -606,6 +606,14 @@ td, th {
         .main-decision-description-tabs-item:hover, .main-decision-description-tabs-item.active {
           color: #000;
           border-bottom: 3px solid #ff9c00; }
+  .main-conclusion-list {
+    margin: 40px 0 0 0; }
+    .main-conclusion-list-item-description {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 24px;
+      font-weight: 300; }
+    .main-conclusion-list-item + .main-conclusion-list-item {
+      margin: 40px 0 0 0; }
   .main-map-road {
     margin: 20px 0 0 0;
     min-height: 593px; }
@@ -763,8 +771,6 @@ td, th {
   width: 50%; }
 .is-col-1-of-3 {
   width: 33%; }
-.is-col-1-of-2 {
-  width: 50%; }
 .is-col-1-of-5 {
   width: 20%; }
 .is-col-1-of-4 {
@@ -773,6 +779,8 @@ td, th {
   width: 80%; }
 .is-col-55-p {
   width: 55%; }
+.is-col-40-p {
+  width: 40%; }
 .is-list-inline {
   list-style: none; }
   .is-list-inline > li {
