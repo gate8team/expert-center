@@ -53,20 +53,27 @@
 
 .is {
   &-form {
-    background-position: center 0%;
+    background-repeat: no-repeat;
+//    background-attachment: fixed;
+    background-position: center;
     
     &-hand {
       color: $white-color;
-      background: url("../../img/form-hand-bg.jpg") no-repeat;
+      background-image: url("../../img/form-hand-bg.jpg");
     }
     
     &-what-next {
       color: $white-color;
-      background: url("../../img/form-what-next-bg.jpg") no-repeat;
+      background-image: url("../../img/form-what-next-bg.jpg");
     }
     
     &-map {
-      background: url("../../img/map-bg.jpg") no-repeat;
+      background-image: url("../../img/map-bg.jpg");
+    }
+    
+    &-start-now {
+      color: $white-color;
+      background-image: url("../../img/form-start-now-bg.jpg");
     }
   }
 

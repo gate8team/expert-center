@@ -746,15 +746,19 @@ td, th {
   margin: 0; }
 
 .is-form {
-  background-position: center 0%; }
+  background-repeat: no-repeat;
+  background-position: center; }
   .is-form-hand {
     color: #fff;
-    background: url("../../img/form-hand-bg.jpg") no-repeat; }
+    background-image: url("../../img/form-hand-bg.jpg"); }
   .is-form-what-next {
     color: #fff;
-    background: url("../../img/form-what-next-bg.jpg") no-repeat; }
+    background-image: url("../../img/form-what-next-bg.jpg"); }
   .is-form-map {
-    background: url("../../img/map-bg.jpg") no-repeat; }
+    background-image: url("../../img/map-bg.jpg"); }
+  .is-form-start-now {
+    color: #fff;
+    background-image: url("../../img/form-start-now-bg.jpg"); }
 .is-col-1-of-2 {
   width: 50%; }
 .is-col-1-of-3 {
