@@ -606,6 +606,9 @@ td, th {
         .main-decision-description-tabs-item:hover, .main-decision-description-tabs-item.active {
           color: #000;
           border-bottom: 3px solid #ff9c00; }
+  .main-map-road {
+    margin: 20px 0 0 0;
+    min-height: 593px; }
 
 .order-item-title {
   font-family: 'Ubuntu', sans-serif;
@@ -750,6 +753,8 @@ td, th {
   .is-form-what-next {
     color: #fff;
     background: url("../../img/form-what-next-bg.jpg") no-repeat; }
+  .is-form-map {
+    background: url("../../img/map-bg.jpg") no-repeat; }
 .is-col-1-of-2 {
   width: 50%; }
 .is-col-1-of-3 {
