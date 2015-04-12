@@ -83,6 +83,18 @@
       color: $white-color;
       background-image: url("../../img/form-start-now-bg.jpg");
     }
+    
+    &-input {
+      &-blocked {
+        margin-top: 3px;
+      }
+    }
+
+    &-button {
+      &-blocked {
+        margin-top: 10px;
+      }
+    }
   }
 
   &-col {
