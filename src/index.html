@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <title>Эксперт центр</title>
-  <link rel="stylesheet" href="./static/styles/css/main.css" />
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./static/styles/css/main.css" />
+  <link rel="stylesheet" href="./bower_components/fancybox/source/jquery.fancybox.css"/>
 </head>
 <body class="is-box-sized is-mobile-fontable">
   <header class="header">
@@ -42,7 +43,7 @@
         </div>
         <div class="main-offer-sales is-text-centered">Скидка 1 000 р на пакет из трех заключений</div>
         <div class="main-offer-order-button is-text-centered">
-          <a href="#" class="button button-large button-orange">Начать узаконение</a>
+          <a href="#first-step-popup" class="button button-large button-orange fancy-box">Начать узаконение</a>
         </div>
       </div>
     </section><!--/main-offer-->
@@ -85,12 +86,12 @@
         <h2 class="main-form-item-title is-no-offset">Отказали в оформлении квартиры?</h2>
         <div class="main-form-item-sub-title">Оставьте заявку прямо сейчас, и мы расскажем, как вам нужно действовать</div>
         <div class="main-form-item-form">
-          <form class="form is-row" action="">
+          <form id="consult-form" class="form is-row form-ajax" action="">
             <div class="form-input form-input-text is-left-col">
-              <input class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
+              <input name="name" class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
             </div>
             <div class="form-input form-input-text is-left-col">
-              <input class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
+              <input name="phone" class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
             </div>
             <div class="form-input is-left-col">
               <button href="#" class="button button-orange">Получить консультацию</button>
@@ -110,12 +111,12 @@
         <h2 class="main-form-item-title is-no-offset">Не знаете, что делать дальше?</h2>
         <div class="main-form-item-sub-title">Расскажите, на каком этапе находитесь вы, и мы расскажем, что делать дальше</div>
         <div class="main-form-item-form">
-          <form class="form is-row" action="">
+          <form id="what-next-form" class="form is-row form-ajax" action="">
             <div class="form-input form-input-text is-left-col">
-              <input class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
+              <input name="name" class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
             </div>
             <div class="form-input form-input-text is-left-col">
-              <input class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
+              <input name="phone" class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
             </div>
             <div class="form-input is-left-col">
               <button href="#" class="button button-small button-orange">Узнать о следующем шаге</button>
@@ -235,7 +236,7 @@
                       от 35 500 р
                     </p>
                     <p class="order-item-description-price-button is-no-padding">
-                      <a href="#" class="button button-full-widh button-orange">Заказать</a>
+                      <a href="#lawer-popup" class="button button-full-width button-orange fancy-box">Заказать</a>
                     </p>
                   </div>
                 </div>
@@ -259,7 +260,7 @@
                       от 15 500 р
                     </p>
                     <p class="order-item-description-price-button is-no-padding">
-                      <a href="#" class="button button-full-widh button-orange">Заказать</a>
+                      <a href="#by-yourself-popup" class="button button-full-width button-orange fancy-box">Заказать</a>
                     </p>
                   </div>
                 </div>
@@ -280,7 +281,7 @@
                       от 6 800 р
                     </p>
                     <p class="order-item-description-price-button is-no-padding">
-                      <a href="#" class="button button-full-widh button-orange">Заказать</a>
+                      <a href="#ses-popup" class="button button-full-width button-orange fancy-box">Заказать</a>
                     </p>
                   </div>
                 </div>
@@ -301,7 +302,7 @@
                       от 5 500 р
                     </p>
                     <p class="order-item-description-price-button is-no-padding">
-                      <a href="#" class="button button-full-widh button-orange">Заказать</a>
+                      <a href="#building-popup" class="button button-full-width button-orange fancy-box">Заказать</a>
                     </p>
                   </div>
                 </div>
@@ -322,7 +323,7 @@
                       от 4 200 р
                     </p>
                     <p class="order-item-description-price-button is-no-padding">
-                      <a href="#" class="button button-full-widh button-orange">Заказать</a>
+                      <a href="#fire-popup" class="button button-full-width button-orange fancy-box">Заказать</a>
                     </p>
                   </div>
                 </div>
@@ -376,12 +377,12 @@
         <h2 class="main-form-item-title is-no-offset">Начни оформление прямо сейчас!</h2>
         <div class="main-form-item-sub-title">Оставьте заявку прямо сейчас, и мы дадим вам скидку 1 000 р на заключения</div>
         <div class="main-form-item-form">
-          <form class="form is-row" action="">
+          <form id="start-now-form" class="form is-row form-ajax" action="">
             <div class="form-input form-input-text is-left-col">
-              <input class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
+              <input name="name" class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
             </div>
             <div class="form-input form-input-text is-left-col">
-              <input class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
+              <input name="phone" class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
             </div>
             <div class="form-input is-left-col">
               <button href="#" class="button button-small button-orange">Узнать о следующем шаге</button>
@@ -402,12 +403,12 @@
         <h2 class="main-form-item-title is-no-offset">Остались вопросы?</h2>
         <div class="main-form-item-sub-title">Оставьте заявку прямо сейчас, мы перезвоним вам и ответим на любой ваш вопрос</div>
         <div class="main-form-item-form">
-          <form class="form is-row" action="">
+          <form id="any-questions-form" class="form is-row form-ajax" action="">
             <div class="form-input form-input-text is-left-col">
-              <input class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+              <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
             </div>
             <div class="form-input form-input-text is-left-col">
-              <input class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
+              <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
             </div>
             <div class="form-input is-left-col">
               <button href="#" class="button button-small button-orange">Задать вопрос</button>
@@ -417,20 +418,20 @@
       </div>
     </section><!--/any questions form-->
   </main><!--/main-->
-  <section class="popup">
+  <section id="ses-popup" class="popup" style="display: none;">
     <div class="popup-container">
       <h3 class="popup-container-title is-text-centered is-no-offset">Заключение СЭС от 6800р</h3>
       <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас, и мы перезвоним вам<br>в течение 10 минут для оформления заказа</div>
       <div class="popup-container-form">
-        <form class="form is-row" action="">
+        <form class="form is-row form-ajax" action="">
           <div class="form-input form-input-text is-block is-text-centered">
-            <input class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+            <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
           </div>
           <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
-            <input class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
+            <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
           </div>
           <div class="form-input is-block is-text-centered is-form-button-blocked">
-            <button href="#" class="button button-small button-orange">Задать вопрос</button>
+            <button href="#" class="button button-small button-orange">Отправить заявку</button>
           </div>
         </form>
       </div>
@@ -438,7 +439,117 @@
         Мы не передаём данные третьим лицам
       </div>
     </div>
-  </section><!--/popup-->
+  </section><!--/ses-popup-->
+  <section id="lawer-popup" class="popup" style="display: none;">
+    <div class="popup-container">
+      <h3 class="popup-container-title is-text-centered is-no-offset">«Узаконить с юристом»</h3>
+      <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас и вы получите<br><span class="is-text-red">скидку 6 000 рублей</span> на услуги юриста</div>
+      <div class="popup-container-form">
+        <form class="form is-row form-ajax" action="">
+          <div class="form-input form-input-text is-block is-text-centered">
+            <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+          </div>
+          <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
+            <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
+          </div>
+          <div class="form-input is-block is-text-centered is-form-button-blocked">
+            <button href="#" class="button button-small button-orange">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+      <div class="popup-container-teaser is-text-centered">
+        Мы не передаём данные третьим лицам
+      </div>
+    </div>
+  </section><!--/lawer-popup-->
+  <section id="by-yourself-popup" class="popup" style="display: none;">
+    <div class="popup-container">
+      <h3 class="popup-container-title is-text-centered is-no-offset">«Узаконить самостоятельно»</h3>
+      <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас и вы получите<br><span class="is-text-red">скидку 1 000 рублей</span> на комплект из трех заключений</div>
+      <div class="popup-container-form">
+        <form class="form is-row form-ajax" action="">
+          <div class="form-input form-input-text is-block is-text-centered">
+            <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+          </div>
+          <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
+            <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
+          </div>
+          <div class="form-input is-block is-text-centered is-form-button-blocked">
+            <button href="#" class="button button-small button-orange">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+      <div class="popup-container-teaser is-text-centered">
+        Мы не передаём данные третьим лицам
+      </div>
+    </div>
+  </section><!--/by-yourself-popup-->
+  <section id="fire-popup" class="popup" style="display: none;">
+    <div class="popup-container">
+      <h3 class="popup-container-title is-text-centered is-no-offset">Пожарное заключение от 4200р</h3>
+      <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас, и мы перезвоним вам<br>в течение 10 минут для оформления заказа</div>
+      <div class="popup-container-form">
+        <form class="form is-row form-ajax" action="">
+          <div class="form-input form-input-text is-block is-text-centered">
+            <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+          </div>
+          <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
+            <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
+          </div>
+          <div class="form-input is-block is-text-centered is-form-button-blocked">
+            <button href="#" class="button button-small button-orange">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+      <div class="popup-container-teaser is-text-centered">
+        Мы не передаём данные третьим лицам
+      </div>
+    </div>
+  </section><!--/fire-popup-->
+  <section id="building-popup" class="popup" style="display: none;">
+    <div class="popup-container">
+      <h3 class="popup-container-title is-text-centered is-no-offset">Строительное заключение от 5500р</h3>
+      <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас, и мы перезвоним вам<br>в течение 10 минут для оформления заказа</div>
+      <div class="popup-container-form">
+        <form class="form is-row form-ajax" action="">
+          <div class="form-input form-input-text is-block is-text-centered">
+            <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+          </div>
+          <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
+            <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
+          </div>
+          <div class="form-input is-block is-text-centered is-form-button-blocked">
+            <button href="#" class="button button-small button-orange">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+      <div class="popup-container-teaser is-text-centered">
+        Мы не передаём данные третьим лицам
+      </div>
+    </div>
+  </section><!--/building-popup-->
+  <section id="first-step-popup" class="popup" style="display: none;">
+    <div class="popup-container">
+      <h3 class="popup-container-title is-text-centered is-no-offset">Оставьте заявку прямо сейчас, и мы<br>расскажем, с чего начать</h3>
+      <div class="popup-container-sub-title is-text-centered">Кроме того, вы получите <span class="is-text-red">скидку 1 000 рублей</span><br>на комплект из трех заключений</div>
+      <div class="popup-container-form">
+        <form class="form is-row form-ajax" action="">
+          <div class="form-input form-input-text is-block is-text-centered">
+            <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+          </div>
+          <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
+            <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
+          </div>
+          <div class="form-input is-block is-text-centered is-form-button-blocked">
+            <button href="#" class="button button-small button-orange">Узнать о первом шаге</button>
+          </div>
+        </form>
+      </div>
+      <div class="popup-container-teaser is-text-centered">
+        Мы не передаём данные третьим лицам
+      </div>
+    </div>
+  </section><!--/ses-popup-->
   <footer class="footer">
     <div class="main-container is-footer-container is-row">
       <div class="is-left-col">
@@ -454,5 +565,10 @@
       </div>
     </div>
   </footer><!--/footer-->
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
+  <script src="./bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="./bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script src="./static/js/main.js"></script>
 </body>
 </html>

@@ -331,7 +331,7 @@
     min-width: 350px;
   }
   
-  &-full-widh {
+  &-full-width {
     width: 100%;
   }
   
@@ -451,4 +451,8 @@
       font-weight: 300;
     }
   }
+}
+
+.error {
+  border: 2px solid $red-color !important;
 }
