@@ -166,7 +166,48 @@
   }
   
   &-instructions {
-    
+    &-list {
+      margin: 90px 0 0 0;
+      
+      &-item {
+        &-number {
+          background: $blue-color;
+          height: 80px;
+          width: 80px;
+          line-height: 80px;
+          font-size: 48px;
+          font-family: $ubuntu-font;
+          font-weight: 300;
+        }
+        
+        &-title {
+          font-size: 30px;
+          font-family: $ubuntu-font;
+          height: 75px;
+          line-height: 75px;
+          
+          &-content {
+            line-height: normal;
+            vertical-align: middle;
+          }
+        }
+        
+        &-image {
+          margin: 25px 0 0 0;
+        }
+        
+        &-info {
+          margin: 20px 0 0 0;
+          font-family: $ubuntu-font;
+          font-weight: 300;
+          font-size: 20px;
+        }
+      }
+
+      &-item + &-item {
+        margin: 45px 0 0 0;
+      }
+    }
   }
   
   &-tips {

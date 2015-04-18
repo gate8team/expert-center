@@ -573,6 +573,33 @@ td, th {
         content: ' ';
         top: 0;
         left: 0; }
+  .main-instructions-list {
+    margin: 90px 0 0 0; }
+    .main-instructions-list-item-number {
+      background: #a9e6ff;
+      height: 80px;
+      width: 80px;
+      line-height: 80px;
+      font-size: 48px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 300; }
+    .main-instructions-list-item-title {
+      font-size: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      height: 75px;
+      line-height: 75px; }
+      .main-instructions-list-item-title-content {
+        line-height: normal;
+        vertical-align: middle; }
+    .main-instructions-list-item-image {
+      margin: 25px 0 0 0; }
+    .main-instructions-list-item-info {
+      margin: 20px 0 0 0;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 300;
+      font-size: 20px; }
+    .main-instructions-list-item + .main-instructions-list-item {
+      margin: 45px 0 0 0; }
   .main-tips-list {
     margin: 90px 0 0 0;
     padding: 0 0; }
@@ -822,6 +849,10 @@ td, th {
     margin-top: 3px; }
   .is-form-button-blocked {
     margin-top: 10px; }
+.is-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
 .is-col-1-of-2 {
   width: 50%; }
 .is-col-1-of-3 {
@@ -836,6 +867,10 @@ td, th {
   width: 55%; }
 .is-col-40-p {
   width: 40%; }
+.is-col-10-p {
+  width: 10%; }
+.is-col-90-p {
+  width: 90%; }
 .is-list-inline {
   list-style: none; }
   .is-list-inline > li {

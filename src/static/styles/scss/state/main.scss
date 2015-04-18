@@ -96,6 +96,12 @@
       }
     }
   }
+  
+  &-circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
 
   &-col {
     &-1 {
@@ -128,6 +134,14 @@
     
     &-40-p {
       width: 40%;
+    }
+    
+    &-10-p {
+      width: 10%;
+    }
+    
+    &-90-p {
+      width: 90%;
     }
   }
   
