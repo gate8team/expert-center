@@ -5,6 +5,8 @@
     $('.fancy-box').fancybox({
       padding: 0
     });
+    
+    $('.tabs').tabs();
 
     $.each(['#consult-form', '#first-step-popup form', '#what-next-form',
             '#lawer-popup form', '#by-yourself-popup form', '#ses-popup form',

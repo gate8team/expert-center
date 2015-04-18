@@ -207,16 +207,16 @@
         <h2 class="main-item-title is-no-offset">Выбери свой пакет услуг</h2>
         <div class="main-item-sub-title">и получи скидку сегодня</div>
         <div class="main-decision-description">
-          <div>
+          <div class="tabs">
             <ul class="main-decision-description-tabs is-list-inline is-no-padding">
               <li class="main-decision-description-tabs-item active">
-                <b>Перепланировка</b> жилого помещения
+                <a class="is-link-cleared" href="#tab-one"><b>Перепланировка</b> жилого помещения</a>
               </li>
               <li class="main-decision-description-tabs-item">
-                <b>Реконструкция</b> жилого помещения
+                <a class="is-link-cleared" href="#tab-two"><b>Реконструкция</b> жилого помещения</a>
               </li>
             </ul>
-            <div class="main-decision-description-content order">
+            <div id="tab-one" class="main-decision-description-content order">
               <div class="order-item">
                 <h3 class="order-item-title is-no-offset">
                   Узаконить с юристом
@@ -307,6 +307,29 @@
                   </div>
                 </div>
               </div><!--/order item-->
+              <div class="order-item">
+                <h3 class="order-item-title is-no-offset">
+                  Отдельно пожарное заключение
+                </h3>
+                <div class="order-item-description is-row is-block-bordered">
+                  <div class="is-left-col is-col-1-of-5 is-text-centered">
+                    <i class="icon-fire-mini-doc is-inline-block"></i>
+                  </div>
+                  <div class="order-item-description-content is-no-paddings-tb is-left-col is-col-55-p">
+                    Вы получите строительное заключение, которое подтвердит соответствие вашего объекта правилам противопожарного режима. <b>Эвакуация в случае пожара пройдет успешно.</b> Конструктивные изменения не спровоцируют ускорения распространения огня.
+                  </div>
+                  <div class="order-item-description-price is-left-col is-col-1-of-4">
+                    <p class="order-item-description-price-new is-no-padding">
+                      от 4 200 р
+                    </p>
+                    <p class="order-item-description-price-button is-no-padding">
+                      <a href="#fire-popup" class="button button-full-width button-orange fancy-box">Заказать</a>
+                    </p>
+                  </div>
+                </div>
+              </div><!--/order item-->
+            </div>
+            <div id="tab-two" class="main-decision-description-content order">
               <div class="order-item">
                 <h3 class="order-item-title is-no-offset">
                   Отдельно пожарное заключение
@@ -436,7 +459,7 @@
         </form>
       </div>
       <div class="popup-container-teaser is-text-centered">
-        Мы не передаём данные третьим лицам
+        <i class="icon-lock is-inline-block"></i> <span class="is-icon-lock-description is-inline-block">Мы не передаём данные третьим лицам</span>
       </div>
     </div>
   </section><!--/ses-popup-->
@@ -458,7 +481,7 @@
         </form>
       </div>
       <div class="popup-container-teaser is-text-centered">
-        Мы не передаём данные третьим лицам
+        <i class="icon-lock is-inline-block"></i> <span class="is-icon-lock-description is-inline-block">Мы не передаём данные третьим лицам</span>
       </div>
     </div>
   </section><!--/lawer-popup-->
@@ -480,7 +503,7 @@
         </form>
       </div>
       <div class="popup-container-teaser is-text-centered">
-        Мы не передаём данные третьим лицам
+        <i class="icon-lock is-inline-block"></i> <span class="is-icon-lock-description is-inline-block">Мы не передаём данные третьим лицам</span>
       </div>
     </div>
   </section><!--/by-yourself-popup-->
@@ -502,7 +525,7 @@
         </form>
       </div>
       <div class="popup-container-teaser is-text-centered">
-        Мы не передаём данные третьим лицам
+        <i class="icon-lock is-inline-block"></i> <span class="is-icon-lock-description is-inline-block">Мы не передаём данные третьим лицам</span>
       </div>
     </div>
   </section><!--/fire-popup-->
@@ -524,7 +547,7 @@
         </form>
       </div>
       <div class="popup-container-teaser is-text-centered">
-        Мы не передаём данные третьим лицам
+        <i class="icon-lock is-inline-block"></i> <span class="is-icon-lock-description is-inline-block">Мы не передаём данные третьим лицам</span>
       </div>
     </div>
   </section><!--/building-popup-->
@@ -546,7 +569,7 @@
         </form>
       </div>
       <div class="popup-container-teaser is-text-centered">
-        Мы не передаём данные третьим лицам
+        <i class="icon-lock is-inline-block"></i> <span class="is-icon-lock-description is-inline-block">Мы не передаём данные третьим лицам</span> 
       </div>
     </div>
   </section><!--/ses-popup-->
@@ -569,6 +592,7 @@
   <script src="./bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
   <script src="./bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="./bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
   <script src="./static/js/main.js"></script>
 </body>
 </html>

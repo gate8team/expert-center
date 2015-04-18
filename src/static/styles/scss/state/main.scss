@@ -172,4 +172,26 @@
       -moz-box-shadow: 0px 0px 1px #6c6c6c;
     }
   }
+  
+  &-icon {
+    &-lock {
+      &-description {
+        height: 27px;
+        vertical-align: top;
+        line-height: 28px;
+        padding: 0 0 0 5px;
+      }
+    }
+  }
+  
+  &-link {
+    &-cleared {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }

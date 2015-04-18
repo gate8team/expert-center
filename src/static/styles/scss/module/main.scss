@@ -232,7 +232,7 @@
             margin-left: 0;
           }
           
-          &:hover, &.active {
+          &:hover, &.ui-state-active {
             color: $black-color;
             border-bottom: 3px solid $orange-border-color;
           }
