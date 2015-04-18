@@ -494,6 +494,7 @@ td, th {
     padding: 50px 0;
     background: url("../../img/main-bg.jpg") no-repeat;
     background-position: center 0%;
+    background-size: cover;
     min-width: 960px; }
     .main-offer-title {
       font-family: 'Ubuntu', sans-serif;
@@ -568,9 +569,10 @@ td, th {
         left: 0; }
   .main-tips-list {
     margin: 90px 0 0 0;
-    padding: 0 25px; }
+    padding: 0 0; }
     .main-tips-list-item {
-      margin: 90px 0 0 0;
+      padding: 25px;
+      margin: 40px 0 0 0;
       font-family: 'Ubuntu', sans-serif; }
       .main-tips-list-item:first-child {
         margin-top: 0; }
@@ -627,7 +629,8 @@ td, th {
   font-family: 'Ubuntu', sans-serif;
   font-size: 30px; }
 .order-item-description {
-  margin: 30px 0 0 0; }
+  margin: 30px 0 0 0;
+  padding: 15px 25px; }
   .order-item-description-content {
     font-family: 'Ubuntu', sans-serif;
     padding: 15px 30px;
@@ -841,3 +844,7 @@ td, th {
   box-shadow: none; }
 .is-text-red {
   color: #c30606; }
+.is-block-bordered {
+  box-shadow: 0px 0px 1px #6c6c6c;
+  -webkit-box-shadow: 0px 0px 1px #6c6c6c;
+  -moz-box-shadow: 0px 0px 1px #6c6c6c; }

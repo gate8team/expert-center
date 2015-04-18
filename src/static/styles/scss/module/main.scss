@@ -50,6 +50,7 @@
     padding: 50px 0;
     background: url("../../img/main-bg.jpg") no-repeat;
     background-position: center 0%;
+    background-size: cover;
     min-width: 960px;
     
     &-title {
@@ -171,10 +172,11 @@
   &-tips {
     &-list {
       margin: 90px 0 0 0;
-      padding: 0 25px;
+      padding: 0 0;
       
       &-item {
-        margin: 90px 0 0 0;
+        padding: 25px;
+        margin: 40px 0 0 0;
         font-family: $ubuntu-font;
         
         &:first-child {
@@ -280,6 +282,7 @@
 
     &-description {
       margin: 30px 0 0 0;
+      padding: 15px 25px;
       
       &-content {
         font-family: $ubuntu-font;
