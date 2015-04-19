@@ -86,9 +86,10 @@
         <h2 class="main-form-item-title is-no-offset">Отказали в оформлении квартиры?</h2>
         <div class="main-form-item-sub-title">Оставьте заявку прямо сейчас, и мы расскажем, как вам нужно действовать</div>
         <div class="main-form-item-form">
-          <form id="consult-form" class="form is-row form-ajax" action="">
+          <form id="consult-form" class="form is-row form-ajax" action="mailer.php">
             <div class="form-input form-input-text is-left-col">
               <input name="name" class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
+              <input name="from" type="hidden" value="Отказали в оформлении квартиры?"/>
             </div>
             <div class="form-input form-input-text is-left-col">
               <input name="phone" class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
@@ -213,9 +214,10 @@
         <h2 class="main-form-item-title is-no-offset">Не знаете, что делать дальше?</h2>
         <div class="main-form-item-sub-title">Расскажите, на каком этапе находитесь вы, и мы расскажем, что делать дальше</div>
         <div class="main-form-item-form">
-          <form id="what-next-form" class="form is-row form-ajax" action="">
+          <form id="what-next-form" class="form is-row form-ajax" action="mailer.php">
             <div class="form-input form-input-text is-left-col">
               <input name="name" class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
+              <input name="from" type="hidden" value="Не знаете, что делать дальше?"/>
             </div>
             <div class="form-input form-input-text is-left-col">
               <input name="phone" class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
@@ -502,9 +504,10 @@
         <h2 class="main-form-item-title is-no-offset">Начни оформление прямо сейчас!</h2>
         <div class="main-form-item-sub-title">Оставьте заявку прямо сейчас, и мы дадим вам скидку 1 000 р на заключения</div>
         <div class="main-form-item-form">
-          <form id="start-now-form" class="form is-row form-ajax" action="">
+          <form id="start-now-form" class="form is-row form-ajax" action="mailer.php">
             <div class="form-input form-input-text is-left-col">
               <input name="name" class="input input-large input-user" type="text" placeholder="Как к вам обращаться?" />
+              <input name="from" type="hidden" value="Начни оформление прямо сейчас!"/>
             </div>
             <div class="form-input form-input-text is-left-col">
               <input name="phone" class="input input-large input-phone" type="text" placeholder="На какой номер позвонить?" />
@@ -528,9 +531,10 @@
         <h2 class="main-form-item-title is-no-offset">Остались вопросы?</h2>
         <div class="main-form-item-sub-title">Оставьте заявку прямо сейчас, мы перезвоним вам и ответим на любой ваш вопрос</div>
         <div class="main-form-item-form">
-          <form id="any-questions-form" class="form is-row form-ajax" action="">
+          <form id="any-questions-form" class="form is-row form-ajax" action="mailer.php">
             <div class="form-input form-input-text is-left-col">
               <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+              <input name="from" type="hidden" value="Остались вопросы?"/>
             </div>
             <div class="form-input form-input-text is-left-col">
               <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
@@ -548,9 +552,10 @@
       <h3 class="popup-container-title is-text-centered is-no-offset">Заключение СЭС от 6800р</h3>
       <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас, и мы перезвоним вам<br>в течение 10 минут для оформления заказа</div>
       <div class="popup-container-form">
-        <form class="form is-row form-ajax" action="">
+        <form class="form is-row form-ajax" action="mailer.php">
           <div class="form-input form-input-text is-block is-text-centered">
             <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+            <input name="from" type="hidden" value="Заключение СЭС от 6800р"/>
           </div>
           <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
             <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
@@ -570,9 +575,10 @@
       <h3 class="popup-container-title is-text-centered is-no-offset">«Узаконить с юристом»</h3>
       <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас и вы получите<br><span class="is-text-red">скидку 6 000 рублей</span> на услуги юриста</div>
       <div class="popup-container-form">
-        <form class="form is-row form-ajax" action="">
+        <form class="form is-row form-ajax" action="mailer.php">
           <div class="form-input form-input-text is-block is-text-centered">
             <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+            <input name="from" type="hidden" value="Узаконить с юристом"/>
           </div>
           <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
             <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
@@ -592,9 +598,10 @@
       <h3 class="popup-container-title is-text-centered is-no-offset">«Узаконить самостоятельно»</h3>
       <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас и вы получите<br><span class="is-text-red">скидку 1 000 рублей</span> на комплект из трех заключений</div>
       <div class="popup-container-form">
-        <form class="form is-row form-ajax" action="">
+        <form class="form is-row form-ajax" action="mailer.php">
           <div class="form-input form-input-text is-block is-text-centered">
             <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+            <input name="from" type="hidden" value="Узаконить самостоятельно"/>
           </div>
           <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
             <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
@@ -614,9 +621,10 @@
       <h3 class="popup-container-title is-text-centered is-no-offset">Пожарное заключение от 4200р</h3>
       <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас, и мы перезвоним вам<br>в течение 10 минут для оформления заказа</div>
       <div class="popup-container-form">
-        <form class="form is-row form-ajax" action="">
+        <form class="form is-row form-ajax" action="mailer.php">
           <div class="form-input form-input-text is-block is-text-centered">
             <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+            <input name="from" type="hidden" value="Пожарное заключение от 4200р"/>
           </div>
           <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
             <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
@@ -636,9 +644,10 @@
       <h3 class="popup-container-title is-text-centered is-no-offset">Строительное заключение от 5500р</h3>
       <div class="popup-container-sub-title is-text-centered">Оставьте заявку прямо сейчас, и мы перезвоним вам<br>в течение 10 минут для оформления заказа</div>
       <div class="popup-container-form">
-        <form class="form is-row form-ajax" action="">
+        <form class="form is-row form-ajax" action="mailer.php">
           <div class="form-input form-input-text is-block is-text-centered">
             <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+            <input name="from" type="hidden" value="Строительное заключение от 5500р"/>
           </div>
           <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
             <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />
@@ -658,9 +667,10 @@
       <h3 class="popup-container-title is-text-centered is-no-offset">Оставьте заявку прямо сейчас, и мы<br>расскажем, с чего начать</h3>
       <div class="popup-container-sub-title is-text-centered">Кроме того, вы получите <span class="is-text-red">скидку 1 000 рублей</span><br>на комплект из трех заключений</div>
       <div class="popup-container-form">
-        <form class="form is-row form-ajax" action="">
+        <form class="form is-row form-ajax" action="mailer.php">
           <div class="form-input form-input-text is-block is-text-centered">
             <input name="name" class="input input-large input-user is-input-bordered" type="text" placeholder="Как к вам обращаться?" />
+            <input name="from" type="hidden" value="Главная форма"/>
           </div>
           <div class="form-input form-input-text is-block is-text-centered is-form-input-blocked">
             <input name="phone" class="input input-large input-phone is-input-bordered" type="text" placeholder="На какой номер позвонить?" />

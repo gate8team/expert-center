@@ -29,10 +29,12 @@
             success:function(data, textStatus, jqXHR) {
               //data: return data from server
               targetForm[0].reset();
+              alert('Спасибо, ваше письмо было доставлено нашим специалистам!');
             },
             error: function(jqXHR, textStatus, errorThrown) {
               //if fails      
               targetForm[0].reset();
+              alert('Что-то пошло не так. Пожалуйста, перезагрузите страницу и попробуйте еще раз..');
             }
           });
         },
