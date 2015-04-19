@@ -30,6 +30,7 @@
               //data: return data from server
               targetForm[0].reset();
               alert('Спасибо, ваше письмо было доставлено нашим специалистам!');
+              window.location.replace("http://google.com");
             },
             error: function(jqXHR, textStatus, errorThrown) {
               //if fails      

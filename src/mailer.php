@@ -3,7 +3,9 @@
     private $from;
     private $name;
     private $phone;
-    private $_toMail = 'me.antony.rain@gmail.com';
+    private $_toMails = array(
+      'me.antony.rain@gmail.com'
+    );
     
     public function __construct($config) {
       $this->from = $config['from'];
@@ -14,7 +16,10 @@
     public function sendMail() {
       $subject = 'Заказ с сайта - ' . $this->from;
       $message = 'Имя: ' . $this->name . ', Телефон: ' . $this->phone;
-      mail($this->_toMail, $subject, $message);
+
+      foreach ($this->_toMails as $mail) {
+        mail($mail, $subject, $message);
+      }
     }
   }
 
